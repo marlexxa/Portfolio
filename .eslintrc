@@ -1,0 +1,17 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["warn", {
+      "singleQuote": true,
+      "trailingComma": "all",
+      "tabWidth": 2,
+      "semi": true,
+      "printWidth": 140
+    }]
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  }
+}

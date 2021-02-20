@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-hudochenkov/full"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+  }
+}
