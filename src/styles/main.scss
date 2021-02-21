@@ -1,7 +1,6 @@
 @import 'variables';
-@import 'hamburger';
-@import 'menu';
-@import 'home-page';
+@import './sections/navigation';
+@import './sections/home-page';
 
 * {
   box-sizing: border-box;
@@ -16,18 +15,4 @@ body {
 .page {
   height: 100vh;
   width: 100vw;
-}
-
-.nav__hamburger {
-  z-index: 999;
-  position: fixed;
-  top: 5%;
-  right: 5%;
-}
-
-.nav__menu {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
