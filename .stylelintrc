@@ -1,7 +1,8 @@
 {
   "extends": [
     "stylelint-config-sass-guidelines",
-    "stylelint-config-hudochenkov/full"
+    "stylelint-config-hudochenkov/full",
+    "stylelint-config-prettier"
   ],
   "plugins": [
     "stylelint-scss",
@@ -11,6 +12,8 @@
   "rules": {
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "selector-class-pattern": 
+    "string-quotes": "single",
+    "max-nesting-depth": 2,
+    "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"    
   }
 }
