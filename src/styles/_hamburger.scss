@@ -12,12 +12,14 @@
   cursor: pointer;
 
   &__item {
+    box-sizing: content-box;
     display: block;
     width: 25px;
     height: 2px;
-    margin: 2px;
-    border-radius: 15%;
+    margin: 1px;
+    border-radius: 25%;
     background: $dark;
+    border: .5px solid $light;
 
     &:nth-child(odd) {
       transition: 0.3s ease-in-out;
