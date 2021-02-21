@@ -9,7 +9,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     height: 100%;
     background-image: url('../static/images/main-picture.JPG');
@@ -29,6 +29,7 @@
   position: absolute;
   bottom: 10%;
   left: 10%;
+  z-index: 5;
   color: $light;
   font-family: $montserrat;
   text-shadow: 0.8px 0 $dark, 0 0.8px $dark, -0.8px 0 $dark, 0 -0.8px $dark;
