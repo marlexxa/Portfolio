@@ -1,4 +1,4 @@
-.hamburger-nav {
+.hamburger {
   position: fixed;
   top: 0;
   right: 0;
@@ -31,17 +31,17 @@
   }
 }
 
-.hamburger-nav--open {
-  .hamburger-nav__item:nth-child(1) {
+.hamburger--open {
+  .hamburger__item:nth-child(1) {
     transform: translateY(6px) rotate(225deg);
   }
 
-  .hamburger-nav__item:nth-child(2) {
+  .hamburger__item:nth-child(2) {
     opacity: 0;
     transform: translateX(-20px);
   }
 
-  .hamburger-nav__item:nth-child(3) {
+  .hamburger__item:nth-child(3) {
     transform: translateY(-6px) rotate(-225deg);
   }
 }
