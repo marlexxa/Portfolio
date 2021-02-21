@@ -9,7 +9,7 @@
     "format": "prettier --write \"src/**/*.{js,scss,html}\"",
     "lint": "npm-run-all --parallel lint:*",
     "lint:es": "eslint --fix \"src/scripts/*.js\"",
-    "lint:scss": "stylelint --fix \"src/styles/*.scss\" --max-warnings 0",
+    "lint:scss": "stylelint --fix \"src/styles/**/*.scss\" --max-warnings 0",
     "start:dev": "parcel -p 3000 watch ./src/index.html"
   },
   "repository": {
