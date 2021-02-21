@@ -1,0 +1,39 @@
+.home {
+  height: 90%;
+  width: 100%;
+  position: relative;
+
+  &__picture {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../static/images/main-picture.JPG");
+  background-size: cover;
+  background-position: center;
+  }
+}
+
+.welcome-text {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-family: $montserrat;
+  color: $light;
+  text-shadow: 0.8px 0 $dark, 0 0.8px $dark, -0.8px 0 $dark, 0 -0.8px $dark;
+  
+  &__heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin: .5rem 0;
+  }
+
+  &__paragraph {
+    font-size: 24px;
+    font-weight: 500;
+    margin: .5rem 0;
+  }
+}
