@@ -40,3 +40,9 @@
     }
   }
 }
+
+.hamburger:hover {
+  .hamburger__item {
+    background: $highlight;
+  }
+}
