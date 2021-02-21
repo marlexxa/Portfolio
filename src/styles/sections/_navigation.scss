@@ -2,15 +2,15 @@
 @import '../components/menu';
 
 .nav__hamburger {
-  z-index: 999;
   position: fixed;
   top: 5%;
   right: 5%;
+  z-index: 999;
 }
 
 .nav__menu {
-  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
