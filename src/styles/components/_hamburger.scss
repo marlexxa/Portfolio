@@ -25,16 +25,18 @@
 }
 
 .hamburger--open {
-  .hamburger__item:nth-child(1) {
-    transform: translateY(6px) rotate(225deg);
-  }
+  .hamburger__item {
+    &:nth-child(1) {
+      transform: translateY(6px) rotate(225deg);
+    }
 
-  .hamburger__item:nth-child(2) {
-    opacity: 0;
-    // transform: translateX(-20px);
-  }
+    &:nth-child(2) {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
 
-  .hamburger__item:nth-child(3) {
-    transform: translateY(-6px) rotate(-225deg);
+    &:nth-child(3) {
+      transform: translateY(-6px) rotate(-225deg);
+    }
   }
 }
