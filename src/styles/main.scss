@@ -18,8 +18,16 @@ body {
   width: 100vw;
 }
 
-.app-nav {
-  position: relative;
+.nav__hamburger {
+  z-index: 999;
+  position: fixed;
   top: 5%;
   right: 5%;
+}
+
+.nav__menu {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
