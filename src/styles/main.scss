@@ -1,6 +1,7 @@
 @import 'variables';
 @import './sections/navigation';
 @import './sections/home-page';
+@import './sections/about-me-page';
 
 * {
   box-sizing: border-box;
@@ -9,7 +10,9 @@
 }
 
 .page {
+  position: relative;
+  z-index: -100;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: $light;
 }
