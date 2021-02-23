@@ -1,0 +1,63 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10%;
+
+  &__heading {
+    @include title;
+
+    flex: 1;
+    padding: 5%;
+  }
+
+  &__skills-container {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-around;
+    padding: 5%;
+  }
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-width: 13rem;
+  margin: 3%;
+  padding: 1%;
+  border: 1px solid $highlight;
+  box-shadow: 2px 2px $highlight;
+  transition: 0.3s ease-in-out;
+
+  * {
+    padding: 0.5rem;
+  }
+
+  &__icon {
+    color: $highlight;
+    font-size: 3rem;
+    text-shadow: 0.8px 0 $dark, 0 0.8px $dark, -0.8px 0 $dark, 0 -0.8px $dark;
+    transition: 0.4s ease-in-out;
+  }
+
+  &__name {
+    color: $dark;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: $montserrat;
+    text-align: center;
+  }
+}
+.skill:hover {
+  transform: scale(1.1);
+
+  .skill__icon {
+    text-shadow: none;
+  }
+}
