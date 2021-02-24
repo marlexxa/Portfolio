@@ -32,7 +32,7 @@
   margin: 3%;
   padding: 1%;
   border: 1px solid $highlight;
-  box-shadow: 2px 2px $highlight;
+  box-shadow: 2px 2px $highlight-hover;
   transition: 0.3s ease-in-out;
 
   * {
@@ -40,7 +40,7 @@
   }
 
   &__icon {
-    color: $highlight;
+    color: $highlight-stronger;
     font-size: 3rem;
     text-shadow: 0.8px 0 $dark, 0 0.8px $dark, -0.8px 0 $dark, 0 -0.8px $dark;
     transition: 0.4s ease-in-out;
