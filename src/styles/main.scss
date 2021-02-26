@@ -4,6 +4,7 @@
 @import './sections/about-me-page';
 @import './sections/skills-page';
 @import './sections/portfolio-page';
+@import './sections/contact_page';
 
 * {
   box-sizing: border-box;
@@ -18,6 +19,6 @@ body {
 .page {
   position: relative;
   width: 100vw;
-  height: 100%;
+  // height: 100vh;
   min-height: 100vh;
 }
