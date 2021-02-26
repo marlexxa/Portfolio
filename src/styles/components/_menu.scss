@@ -21,20 +21,15 @@
 .items__item {
   margin: 20px 0;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2em;
   font-family: $montserrat;
   text-align: center;
   cursor: pointer;
-  transition: 0.3s;
 
   a {
     color: $dark;
     text-decoration: none;
-
-    &:hover {
-      color: $highlight;
-      text-shadow: 0.5px 0 $dark, 0 0.5px $dark;
-    }
+    transition: 0.2s ease-in;
   }
 
   &::before {
@@ -45,7 +40,21 @@
     width: 20px;
     height: 2px;
     margin: 0 auto;
-    background: $highlight;
+    background: $highlight-stronger;
+    transition: 0.2s ease-in;
+  }
+
+  &:hover {
+    a {
+      color: $highlight-hover;
+      text-shadow: 1px 1px 1px $dark;
+      transition: 0.2s ease-out;
+    }
+
+    &::before {
+      width: 40px;
+      transition: 0.3s ease-out;
+    }
   }
 }
 
