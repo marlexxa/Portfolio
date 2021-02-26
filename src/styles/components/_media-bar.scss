@@ -3,18 +3,20 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  height: 100px;
 
   &__item {
+    padding-top: 1em;
     text-align: center;
 
     .fab {
       color: $light;
-      font-size: 20px;
+      font-size: 1.5em;
+      transition: .2s ease-in-out;
     }
 
     .fab:hover {
-      color: $highlight;
+      color: $highlight-hover;
+      text-shadow: 1px 1px 1px $dark;
     }
   }
 }
