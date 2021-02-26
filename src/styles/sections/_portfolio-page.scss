@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   padding: 5%;
   border-bottom: 3px dashed $highlight-stronger;
   border-radius: 30px;
@@ -69,9 +69,9 @@
     flex-direction: column;
 
     &__name {
-      padding: 0.5rem;
+      padding: 0.5em;
       color: $highlight-stronger;
-      font-size: 1.5rem;
+      font-size: 1.5em;
       font-family: $montserrat;
       text-align: center;
       text-shadow: 1px 1px 1px $dark;
@@ -79,7 +79,7 @@
 
     &__description {
       color: $dark;
-      font-size: 1.2rem;
+      font-size: 1.2em;
       font-family: $montserrat;
       text-align: center;
     }
@@ -89,12 +89,12 @@
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-    padding: 0.5rem;
+    padding: 0.5em;
 
     i {
-      padding: 0.5rem;
+      padding: 0.5em;
       color: $dark;
-      font-size: 2rem;
+      font-size: 2em;
       transition: 0.3s ease-in-out;
     }
 
@@ -136,7 +136,7 @@
   height: 100%;
   padding: 5%;
   list-style: none;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: $montserrat;
   opacity: 100%;
 
