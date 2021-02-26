@@ -43,6 +43,7 @@
 
 .hamburger:hover {
   .hamburger__item {
-    background: $highlight;
+    border-color: $highlight-hover;
+    background: $highlight-hover;
   }
 }
