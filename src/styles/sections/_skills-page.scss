@@ -28,28 +28,28 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-width: 13rem;
-  margin: 3%;
-  padding: 1%;
+  min-width: 15.1em;
+  margin: 0.7em;
   border: 1px solid $highlight;
+  border-radius: 5px;
   box-shadow: 2px 2px $highlight-hover;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 
   * {
-    padding: 0.5rem;
+    padding: 10px;
   }
 
   &__icon {
     color: $highlight-stronger;
-    font-size: 3rem;
-    text-shadow: 0.8px 0 $dark, 0 0.8px $dark, -0.8px 0 $dark, 0 -0.8px $dark;
-    transition: 0.4s ease-in-out;
+    font-size: 3em;
+    text-shadow: 1px 1px 1px $dark;
+    transition: 0.3s ease-in-out;
   }
 
   &__name {
     color: $dark;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: $montserrat;
     text-align: center;
   }
