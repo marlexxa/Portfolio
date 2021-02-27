@@ -91,14 +91,14 @@
     align-self: flex-end;
     padding: 0.5em;
 
-    i {
+    .icon {
       padding: 0.5em;
       color: $dark;
       font-size: 2em;
       transition: 0.3s ease-in-out;
     }
 
-    i:hover {
+    .icon:hover {
       color: $highlight-hover;
       text-shadow: 1px 1px 1px $dark;
       scale: 1.2;
