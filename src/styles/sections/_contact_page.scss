@@ -58,6 +58,7 @@
       color: $highlight-stronger;
       font-size: 4em;
       text-shadow: 1px 1px 1px $dark;
+      transition: 0.2s ease-in;
     }
 
     .icon:hover {
