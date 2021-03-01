@@ -33,7 +33,7 @@
   border: 1px solid $highlight;
   border-radius: 5px;
   box-shadow: 2px 2px $highlight-hover;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in;
 
   * {
     padding: 10px;
@@ -43,7 +43,7 @@
     color: $highlight-stronger;
     font-size: 3em;
     text-shadow: 1px 1px 1px $dark;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   &__name {
@@ -55,7 +55,7 @@
   }
 }
 .skill:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 
   .skill__icon {
     text-shadow: none;
