@@ -108,19 +108,19 @@
   &__img:hover {
     img {
       opacity: 0.2;
-      transition: 0.2s ease-in;
+      transition: 0.1s ease-in;
     }
 
     .project__overlay {
       box-shadow: inset -2px -2px 20px $highlight-stronger, inset 2px 2px 20px $highlight-stronger;
       opacity: 0.8;
-      transition: 0.2s ease-in 0.1s;
+      transition: 0.1s ease-in 0.05s;
     }
 
     .project__technologies {
       opacity: 1;
       visibility: visible;
-      transition: 0.2s ease-out 0.1s;
+      transition: 0.1s ease-out 0.1s;
       transform: translateX(0%);
     }
   }
