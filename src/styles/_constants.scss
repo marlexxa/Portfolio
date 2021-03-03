@@ -12,7 +12,7 @@ $montserrat: 'Montserrat', sans-serif;
 //---------breakpoints---------//
 @mixin breakpoint($point) {
   @if $point == small {
-    @media (min-width: 450px) {
+    @media (min-width: 550px) {
       @content;
     }
   } @else if $point == xmedium {
