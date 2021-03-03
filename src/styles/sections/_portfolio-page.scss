@@ -23,6 +23,7 @@
 .project {
   @include breakpoint(xmedium) {
     flex-direction: row;
+    align-items: center;
   }
 
   display: flex;
