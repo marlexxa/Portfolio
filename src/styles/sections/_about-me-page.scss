@@ -22,7 +22,6 @@
   &__description {
     position: relative;
     flex: 4;
-    padding: 5%;
   }
 }
 
@@ -85,6 +84,12 @@
 }
 
 .description {
+  @include breakpoint(xmedium) {
+    padding: 2em 5em;
+  }
+
+  padding: 2em;
+
   &__paragraph {
     color: $dark;
     font-size: 1em;
