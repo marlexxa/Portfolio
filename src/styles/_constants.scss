@@ -11,24 +11,20 @@ $montserrat: 'Montserrat', sans-serif;
 /**************** mixins ****************/
 //---------breakpoints---------//
 @mixin breakpoint($point) {
-  @if $point == xsmall {
-    @media (max-width: 450px) {
-      @content;
-    }
-  } @else if $point == small {
-    @media (max-width: 760px) {
+  @if $point == small {
+    @media (min-width: 450px) {
       @content;
     }
   } @else if $point == xmedium {
-    @media (max-width: 1025px) {
+    @media (min-width: 760px) {
       @content;
     }
   } @else if $point == medium {
-    @media (max-width: 1250px) {
+    @media (min-width: 1025px) {
       @content;
     }
   } @else if $point == large {
-    @media (max-width: 1600px) {
+    @media (min-width: 1250px) {
       @content;
     }
   } @else if $point == horizontalmobile {
