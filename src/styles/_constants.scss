@@ -37,13 +37,6 @@ $montserrat: 'Montserrat', sans-serif;
 //---------title-headings---------//
 @mixin title {
   h2 {
-    @include breakpoint(small) {
-      font-size: 3rem;
-    }
-    @include breakpoint(xmedium) {
-      font-size: 3.5rem;
-    }
-
     position: relative;
     color: $dark;
     font-weight: 600;
