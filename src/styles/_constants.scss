@@ -9,6 +9,36 @@ $highlight-hover: #ecb7bf;
 $montserrat: 'Montserrat', sans-serif;
 
 /**************** mixins ****************/
+//---------breakpoints---------//
+@mixin breakpoint($point) {
+  @if $point == xsmall {
+    @media (max-width: 450px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (max-width: 760px) {
+      @content;
+    }
+  } @else if $point == xmedium {
+    @media (max-width: 1025px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 1250px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  } @else if $point == horizontalmobile {
+    @media (max-height: 415px) {
+      @content;
+    }
+  }
+}
+
+//---------title-headings---------//
 @mixin title {
   h2 {
     position: relative;
