@@ -9,10 +9,10 @@
     box-sizing: content-box;
     width: 25px;
     height: 2px;
-    margin: 1px;
+    margin: 1.5px;
     border: 0.5px solid $light;
     border-radius: 5px;
-    background: $dark;
+    background: $highlight-stronger;
 
     &:nth-child(odd) {
       transition: 0.3s ease-in-out;
@@ -26,8 +26,10 @@
 
 .hamburger--open {
   .hamburger__item {
+    background-color: $highlight-stronger;
+
     &:nth-child(1) {
-      transform: translateY(6px) rotate(225deg);
+      transform: translateY(7px) rotate(225deg);
     }
 
     &:nth-child(2) {
@@ -36,14 +38,7 @@
     }
 
     &:nth-child(3) {
-      transform: translateY(-6px) rotate(-225deg);
+      transform: translateY(-7px) rotate(-225deg);
     }
-  }
-}
-
-.hamburger:hover {
-  .hamburger__item {
-    border-color: $highlight-hover;
-    background: $highlight-hover;
   }
 }
