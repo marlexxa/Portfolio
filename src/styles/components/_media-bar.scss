@@ -1,17 +1,15 @@
 .media-bar {
   display: flex;
   flex: 1;
-  flex-direction: column;
-  justify-content: space-between;
 
   &__item {
-    padding-top: 1em;
+    padding-right: 1.5em;
     text-align: center;
 
     .fab {
       color: $light;
-      font-size: 1.5em;
-      transition: .2s ease-in-out;
+      font-size: 1.8em;
+      transition: 0.2s ease-in-out;
     }
 
     .fab:hover {
