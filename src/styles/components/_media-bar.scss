@@ -9,12 +9,12 @@
     .fab {
       color: $light;
       font-size: 1.8em;
+      text-shadow: 1px 1px 1px $dark;
       transition: 0.2s ease-in-out;
     }
 
     .fab:hover {
-      color: $highlight-hover;
-      text-shadow: 1px 1px 1px $dark;
+      transform: scale(1.1);
     }
   }
 }
