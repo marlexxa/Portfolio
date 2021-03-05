@@ -1,4 +1,8 @@
 .skills {
+  @include breakpoint(medium) {
+    padding-right: 15%;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,9 +52,9 @@
 
   &__name {
     color: $dark;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1em;
-    font-family: $montserrat;
+    font-family: $cabin;
     text-align: center;
   }
 }

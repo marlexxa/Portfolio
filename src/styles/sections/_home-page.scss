@@ -38,9 +38,9 @@
     }
 
     position: absolute;
+    right: 2rem;
     bottom: 15%;
     left: 10%;
-    right: 2rem;
     z-index: 5;
   }
 }
@@ -61,6 +61,7 @@
     @include breakpoint(horizontalmobile) {
       font-size: 2.5em;
     }
+
     font-weight: 600;
     font-size: 3.1em;
 
@@ -81,6 +82,7 @@
     @include breakpoint(horizontalmobile) {
       margin: 0.5em 0;
     }
+
     margin: 1em 0;
     font-weight: 500;
     font-size: 1.8em;
