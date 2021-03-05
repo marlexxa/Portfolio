@@ -4,6 +4,7 @@ const hamburgerButton = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.items__item');
 const skillsItems = document.querySelectorAll('.skills-container__skill');
+const mainContent = document.querySelector('main');
 
 hamburgerButton.addEventListener('click', function (event) {
   event.preventDefault();
@@ -27,5 +28,14 @@ skillsItems.forEach((item) => {
 
   item.addEventListener('mouseleave', function () {
     skillIcon.classList.remove('colored');
+  });
+});
+
+mainContent.addEventListener('mouseup', function (e) {
+  menuItems.forEach((item) => {
+    if (!item.contains(e.target)) {
+      menu.classList.remove('menu--open');
+      hamburgerButton.classList.remove('hamburger--open');
+    }
   });
 });
