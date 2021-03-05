@@ -23,6 +23,9 @@
 }
 
 .items__item {
+  @include breakpoint(horizontalmobile) {
+    margin: 5px;
+  }
   margin: 20px 0;
   font-weight: 600;
   font-size: 2em;
@@ -38,6 +41,9 @@
   }
 
   &::before {
+    @include breakpoint(horizontalmobile) {
+      height: 0;
+    }
     content: '';
     position: relative;
     top: -5px;
