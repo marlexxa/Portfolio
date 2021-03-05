@@ -2,51 +2,95 @@
 
 .home {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  margin-bottom: 10vh;
 
   &__picture {
+    @include breakpoint(xmedium) {
+      width: 20rem;
+    }
+    @include breakpoint(medium) {
+      width: 25rem;
+    }
+    @include breakpoint(large) {
+      width: 30rem;
+    }
+
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     width: 100%;
-    height: 90%;
-    background-image: url('../static/images/main-picture.JPG');
-    background-color: $highlight;
-    background-position: center;
-    background-size: cover;
+    height: 100%;
+    background-color: $highlight-stronger;
   }
 
-  &__media-bar {
+  &__content-wrapper {
+    @include breakpoint(xmedium) {
+      top: 30%;
+      left: 9rem;
+    }
+    @include breakpoint(medium) {
+      left: 11.2rem;
+    }
+    @include breakpoint(large) {
+      left: 16.2rem;
+    }
+
     position: absolute;
-    right: 5%;
+    right: 2rem;
     bottom: 15%;
-    z-index: 5;
-  }
-
-  &__welcome-text {
-    position: absolute;
-    right: 20%;
-    bottom: 25%;
     left: 10%;
     z-index: 5;
   }
 }
 
 .welcome-text {
+  @include breakpoint(small) {
+    font-size: 1.2rem;
+  }
+  @include breakpoint(medium) {
+    font-size: 1.5rem;
+  }
+
   color: $light;
   font-family: $montserrat;
-  text-shadow: 1px 1px 2px $dark, -1px -1px 2px $dark;
+  text-shadow: 1px 1px 2px $dark;
 
   &__heading {
-    margin: 0.5em 0;
+    @include breakpoint(horizontalmobile) {
+      font-size: 2.5em;
+    }
+
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3.1em;
+
+    span {
+      @include breakpoint(horizontalmobile) {
+        display: inline-block;
+      }
+      @include breakpoint(xmedium) {
+        display: inline-block;
+        color: $highlight-stronger;
+      }
+
+      display: block;
+    }
   }
 
   &__paragraph {
-    margin: 0.5em 0;
+    @include breakpoint(horizontalmobile) {
+      margin: 0.5em 0;
+    }
+
+    margin: 1em 0;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.8em;
+
+    span {
+      @include breakpoint(xmedium) {
+        color: $highlight-stronger;
+      }
+    }
   }
 }

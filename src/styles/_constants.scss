@@ -1,12 +1,13 @@
 /**************** Colors ****************/
-$light: #f2f2f2;
-$dark: #616161;
+$light: #fff;
+$dark: #555;
 $highlight: #f7cbd1;
 $highlight-stronger: #e7879d;
 $highlight-hover: #ecb7bf;
 
 /**************** Fonts ****************/
 $montserrat: 'Montserrat', sans-serif;
+$cabin: 'Cabin', sans-serif;
 
 /**************** mixins ****************/
 //---------breakpoints---------//
@@ -20,7 +21,7 @@ $montserrat: 'Montserrat', sans-serif;
       @content;
     }
   } @else if $point == medium {
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
       @content;
     }
   } @else if $point == large {
@@ -42,6 +43,7 @@ $montserrat: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2.5em;
     font-family: $montserrat;
+    text-transform: uppercase;
   }
 
   h2::before {
@@ -51,9 +53,10 @@ $montserrat: 'Montserrat', sans-serif;
     left: -15px;
     z-index: -1;
     display: block;
-    width: 2.2em;
+    width: 3.5em;
     height: 1.2em;
     border-radius: 5px;
-    background: $highlight;
+    background: $highlight-stronger;
+    opacity: 0.5;
   }
 }

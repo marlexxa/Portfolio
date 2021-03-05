@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Lena's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css" />
@@ -35,20 +35,22 @@
       <section class="page" id="home-page">
         <div class="home">
           <div class="home__picture"></div>
-          <div class="home__welcome-text welcome-text">
-            <h1 class="welcome-text__heading">Hello, <br />I am Lena</h1>
-            <p class="welcome-text__paragraph">frontend developer</p>
-          </div>
-          <div class="home__media-bar media-bar">
-            <div class="media-bar__item">
-              <a href="https://github.com/marlexxa" target="_blank">
-                <span role="img" class="fab fa-github" aria-label="GitHub"></span>
-              </a>
+          <div class="home__content-wrapper">
+            <div class="welcome-text">
+              <h1 class="welcome-text__heading">Hello, <span>I am Lena</span></h1>
+              <p class="welcome-text__paragraph">front-end <span>developer</span></p>
             </div>
-            <div class="media-bar__item">
-              <a href="https://www.facebook.com/marlena.kruszewska.75/" target="_blank">
-                <span role="img" class="fab fa-facebook" aria-label="Facebook"></span>
-              </a>
+            <div class="media-bar">
+              <div class="media-bar__item">
+                <a href="https://github.com/marlexxa" target="_blank">
+                  <span role="img" class="fab fa-github" aria-label="GitHub"></span>
+                </a>
+              </div>
+              <div class="media-bar__item">
+                <a href="https://www.facebook.com/marlena.kruszewska.75/" target="_blank">
+                  <span role="img" class="fab fa-facebook" aria-label="Facebook"></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -57,14 +59,6 @@
         <div class="about-me">
           <div class="about-me__heading">
             <h2>About me</h2>
-          </div>
-          <div class="about-me__picture">
-            <div class="img-container">
-              <img src="./static/images/my-picture2.JPG" alt="Lena's profile picture" />
-            </div>
-            <div class="img-container">
-              <img src="./static/images/my-picture.JPG" alt="Lena's profile picture" />
-            </div> 
           </div>
           <div class="about-me__description description">
             <p class="description__paragraph">
@@ -75,11 +69,19 @@
               Apart from coding and spending time in front of the computer, I&nbsplove <span class="description--bold">being out in nature</span>. Watching sunrises, sunsets or starry skies is for me better than any movie and sleeping in a&nbsptent is like in a&nbspmillion star hotel. <span class="description--bold">Travels</span> with my backpack and tent are always the best ones ;) 
             </p>
             <p class="description__paragraph">
-              I'm passionate about <span class="description--bold">Spanish culture</span> and have started learning spanish by myself.
+              I'm passionate about <span class="description--bold">Spanish culture</span> and have started learning Spanish by myself.
             </p>
             <p class="description__paragraph">
-              Besides that, my heart belongs to <span class="description--bold">yoga, coffee</span> and <span class="description--bold">my cats</span> ;) 
+              Besides that, my heart belongs to <span class="description--bold">coffee, yoga</span> and <span class="description--bold">my cats</span> ;) 
             </p>
+          </div>
+          <div class="about-me__picture">
+            <div class="img-container">
+              <img src="./static/images/me-horizontal.jpg" alt="Lena walking surrounded by green trees" />
+            </div>
+            <div class="img-container">
+              <img src="./static/images/me-vertical.jpg" alt="Lena's profile picture" />
+            </div> 
           </div>
         </div>
       </section>

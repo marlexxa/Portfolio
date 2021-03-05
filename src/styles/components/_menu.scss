@@ -1,4 +1,8 @@
 .menu {
+  @include breakpoint(medium) {
+    width: 20%;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +11,7 @@
   background: $light;
   opacity: 0;
   transition: 0.3s 0.1s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(100%);
 
   &__items {
     display: flex;
@@ -19,11 +23,16 @@
 }
 
 .items__item {
+  @include breakpoint(horizontalmobile) {
+    margin: 5px;
+  }
+
   margin: 20px 0;
   font-weight: 600;
   font-size: 2em;
   font-family: $montserrat;
   text-align: center;
+  text-transform: lowercase;
   cursor: pointer;
 
   a {
@@ -33,6 +42,10 @@
   }
 
   &::before {
+    @include breakpoint(horizontalmobile) {
+      height: 0;
+    }
+
     content: '';
     position: relative;
     top: -5px;
@@ -46,7 +59,7 @@
 
   &:hover {
     a {
-      color: $highlight-hover;
+      color: $highlight-stronger;
       text-shadow: 1px 1px 1px $dark;
       transition: 0.2s ease-out;
     }

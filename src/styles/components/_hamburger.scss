@@ -1,18 +1,23 @@
 .hamburger {
+  z-index: 999;
   display: flex;
   flex-direction: column;
   background: transparent;
   cursor: pointer;
 
   &__item {
+    @include breakpoint(medium) {
+      border-color: $highlight-stronger;
+    }
+
     display: block;
     box-sizing: content-box;
     width: 25px;
     height: 2px;
-    margin: 1px;
+    margin: 1.5px;
     border: 0.5px solid $light;
     border-radius: 5px;
-    background: $dark;
+    background: $highlight-stronger;
 
     &:nth-child(odd) {
       transition: 0.3s ease-in-out;
@@ -25,9 +30,19 @@
 }
 
 .hamburger--open {
+  @include breakpoint(medium) {
+    z-index: 1;
+  }
+
   .hamburger__item {
+    @include breakpoint(medium) {
+      opacity: 0;
+    }
+
+    background-color: $highlight-stronger;
+
     &:nth-child(1) {
-      transform: translateY(6px) rotate(225deg);
+      transform: translateY(7px) rotate(225deg);
     }
 
     &:nth-child(2) {
@@ -36,14 +51,7 @@
     }
 
     &:nth-child(3) {
-      transform: translateY(-6px) rotate(-225deg);
+      transform: translateY(-7px) rotate(-225deg);
     }
-  }
-}
-
-.hamburger:hover {
-  .hamburger__item {
-    border-color: $highlight-hover;
-    background: $highlight-hover;
   }
 }
