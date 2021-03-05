@@ -1,4 +1,8 @@
 .menu {
+  @include breakpoint(large) {
+    width: 20%;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +11,7 @@
   background: $light;
   opacity: 0;
   transition: 0.3s 0.1s ease-in-out;
-  transform: translateX(-100%);
+  transform: translateX(100%);
 
   &__items {
     display: flex;
@@ -46,7 +50,7 @@
 
   &:hover {
     a {
-      color: $highlight-hover;
+      color: $highlight-stronger;
       text-shadow: 1px 1px 1px $dark;
       transition: 0.2s ease-out;
     }

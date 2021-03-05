@@ -2,15 +2,18 @@
 @import '../components/menu';
 
 .nav__hamburger {
+  @include breakpoint(large) {
+    top: 40%;
+  }
+
   position: fixed;
   top: 5%;
   right: 5%;
-  z-index: 999;
 }
 
 .nav__menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 100;
 }
