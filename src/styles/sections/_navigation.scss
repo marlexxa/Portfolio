@@ -2,7 +2,7 @@
 @import '../components/menu';
 
 .nav__hamburger {
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     top: 40%;
   }
 

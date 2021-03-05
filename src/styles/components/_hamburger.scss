@@ -6,7 +6,7 @@
   cursor: pointer;
 
   &__item {
-    @include breakpoint(large) {
+    @include breakpoint(medium) {
       border-color: $highlight-stronger;
     }
 
@@ -30,12 +30,12 @@
 }
 
 .hamburger--open {
-  @include breakpoint(large) {
+  @include breakpoint(medium) {
     z-index: 1;
   }
 
   .hamburger__item {
-    @include breakpoint(large) {
+    @include breakpoint(medium) {
       opacity: 0;
     }
 

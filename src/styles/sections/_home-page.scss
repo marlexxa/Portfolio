@@ -10,6 +10,9 @@
       width: 20rem;
     }
     @include breakpoint(medium) {
+      width: 25rem;
+    }
+    @include breakpoint(large) {
       width: 30rem;
     }
 
@@ -28,12 +31,16 @@
       left: 9rem;
     }
     @include breakpoint(medium) {
+      left: 11.2rem;
+    }
+    @include breakpoint(large) {
       left: 16.2rem;
     }
 
     position: absolute;
     bottom: 15%;
     left: 10%;
+    right: 2rem;
     z-index: 5;
   }
 }

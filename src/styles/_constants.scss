@@ -20,7 +20,7 @@ $montserrat: 'Montserrat', sans-serif;
       @content;
     }
   } @else if $point == medium {
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
       @content;
     }
   } @else if $point == large {
